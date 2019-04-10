@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <h1>Signup</h1>
+    </head>
+    <body>
+       
+        <form action="/welcome" method="post">
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" value="{{request.form['username']}}"/> <span id='username_error'>{{username_error}}</span><br>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" /> <span id="password_error">{{password_error}}</span><br>
+            <label for="verify_password">Verify Password</label>
+            <input id="verify_password" type="password" name="verify_password" /> <br>
+            <label for="email">Email Address</label>
+            <input id="email" type="text" name="email" value="{{request.form['email']}}"/> <span id="email_error">{{email_error}}</span><br>
+            <input type="submit" />
+           
+        </form>
+    </body>
+</html>
