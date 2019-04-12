@@ -16,12 +16,10 @@ def display_form():
     
     return render_template('index.html', username_error = '', password_error='', email_error='')
 
-  
 
 
-    
 
-    
+
 
 @app.route("/welcome", methods=['post'])
 def validate_info():
